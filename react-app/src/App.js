@@ -12,7 +12,9 @@ function App() {
     <Nav />
     </div>
     <Main />
+    <div className='FooterBG'>
     <Footer />
+    </div>
     </>
   );
 }

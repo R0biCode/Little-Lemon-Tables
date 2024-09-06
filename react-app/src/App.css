@@ -1,3 +1,9 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .Header {
   display: flex;
   justify-content: space-between;
@@ -28,17 +34,114 @@
 
 .FooterWrapper {
   text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
+
 
 .FooterLogo, .FooterSection {
   display: inline-block;
   vertical-align: top;
-  width: 23%; /* This makes the blocks equal. */
+  width: 20%; /* This makes the blocks equal. */
   margin: 0 1%;
+  padding-left: 20px;
 }
 
 .FooterSection ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .FooterWrapper {
+    display: block;
+    text-align: center; /* Ensures content is centered */
+  }
+
+  .FooterLogo, .FooterSection {
+    display: block; /* Stacks the elements vertically */
+    width: 100%; /* Full width for each element */
+    margin: 20px 0; /* Adds space between elements */
+  }
+
+  .FooterSection ul {
+    text-align: center; /* Centers the links on smaller screens */
+  }
+}
+
+/* Global Styles */
+body {
+  font-family: 'Karla', sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Markazi Text for Display Titles */
+h1, h2, h3 {
+  font-family: 'Markazi Text', serif;
+}
+
+/* h1 - Display Title - Medium 64pt */
+h1 {
+  font-size: 64px;
+  font-weight: 500; /* Medium weight */
+}
+
+/* h2 - Subtitle - Regular 40pt */
+h2 {
+  font-size: 40px;
+  font-weight: 400; /* Regular weight */
+}
+
+/* h3 - Section Title! Uppercase 20pt Extra Bold */
+h3 {
+  font-size: 20px;
+  font-weight: 700; /* Extra Bold weight */
+  text-transform: uppercase;
+}
+
+/* Karla for other text elements */
+h4 {
+  font-family: 'Karla', sans-serif;
+  font-size: 18px; /* Medium 18pt */
+  font-weight: 500;
+}
+
+/* Special Section Title 16pt Bold */
+h5 {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Paragraph text - Regular 16pt */
+p {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 65ch; /* Max 65 characters per line */
+}
+
+/* Highlight Text - Price Medium 16pt */
+.highlight {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 500; /* Medium weight */
+}
+
+a {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px; /* Adjust the size as needed */
+  font-weight: 400; /* Regular weight */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Adjust color as needed */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #000; /* Change color on hover if desired */
 }
