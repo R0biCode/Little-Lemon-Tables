@@ -4,6 +4,103 @@ html, body {
   padding: 0;
 }
 
+.FirstWrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  align-items: center;
+  padding-right: 3rem;
+}
+.CardNamePrice{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3rem;
+  align-items: center;
+}
+
+
+.CardContent p {
+  color: #495E57;
+}
+
+.CardContent {
+  padding-left: 3rem;
+}
+
+.CardPrice{
+  color: #EE9972;
+}
+.CardDelivery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.CardBody{
+  background-color: #EDEFEE;
+  width: 40%;
+  padding-bottom: 20px;
+  border-radius: 20px;;
+}
+
+.SecondWrapper{
+  display: flex;
+  gap:2%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.CardBody img {
+  border-top-left-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 20px;
+}
+
+.ChicagoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #495E57;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 5%;
+  padding: 3rem;
+}
+
+
+.TextWrapper {
+    color: #fff;
+    padding: 2%;
+    flex-basis: 45%;
+    max-width: 600px;
+}
+
+.FooterLogo img {
+  margin-top: 20px;
+  max-width: 200px;
+}
+
+
+.TextWrapper h1, .TextWrapper h2 {
+  margin: 0;
+}
+
+.TextWrapper p {
+  margin-top: 10px;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+.ChicagoImage{
+  border-radius: 12px;
+  box-shadow: -2px 4px 6.6px 0px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+  width: 300px;
+}
+
 .Header {
   display: flex;
   justify-content: space-between;
@@ -45,7 +142,7 @@ html, body {
 .FooterLogo, .FooterSection {
   display: inline-block;
   vertical-align: top;
-  width: 20%; /* This makes the blocks equal. */
+  width: 20%;
   margin: 0 1%;
   padding-left: 20px;
 }
@@ -56,20 +153,41 @@ html, body {
   margin: 0;
 }
 
+@media (max-width: 1400px){
+  .PrimaryHeader{
+    padding: 0px;
+    font-size:64px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .FooterWrapper {
     display: block;
-    text-align: center; /* Ensures content is centered */
+    text-align: center;
   }
+  .ChicagoWrapper {
+    flex-direction: column;
+    padding: 10%;
+}
+
+.TextWrapper, .ChicagoImage {
+    max-width: 100%;
+    flex-basis: 100%;
+}
+
+.ChicagoButton {
+    width: 100%;
+}
 
   .FooterLogo, .FooterSection {
-    display: block; /* Stacks the elements vertically */
-    width: 100%; /* Full width for each element */
-    margin: 20px 0; /* Adds space between elements */
+    display: block;
+    width: 100%;
+    margin: 20px 0;
   }
 
   .FooterSection ul {
-    text-align: center; /* Centers the links on smaller screens */
+    text-align: center;
   }
 }
 
@@ -90,11 +208,15 @@ h1 {
   font-size: 64px;
   font-weight: 500; /* Medium weight */
 }
+.PrimaryHeader{
+  color: #F4CE14;
+}
 
 /* h2 - Subtitle - Regular 40pt */
 h2 {
   font-size: 40px;
   font-weight: 400; /* Regular weight */
+  color: white;
 }
 
 /* h3 - Section Title! Uppercase 20pt Extra Bold */
@@ -124,9 +246,31 @@ p {
   font-size: 16px;
   font-weight: 400;
   max-width: 65ch; /* Max 65 characters per line */
+  color: white;
 }
 
-/* Highlight Text - Price Medium 16pt */
+.ChicagoButton {
+  width: 200px;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: #f4ce14;
+  border: none;
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+
+
+
+.ChicagoButton:hover {
+  background-color: #dda511;
+}
+
 .highlight {
   font-family: 'Karla', sans-serif;
   font-size: 16px;
@@ -135,13 +279,13 @@ p {
 
 a {
   font-family: 'Karla', sans-serif;
-  font-size: 16px; /* Adjust the size as needed */
+  font-size: 16px;
   font-weight: 400; /* Regular weight */
   text-decoration: none; /* Remove underline */
-  color: #333; /* Adjust color as needed */
+  color: #333;
 }
 
 a:hover {
-  text-decoration: underline; /* Add underline on hover */
-  color: #000; /* Change color on hover if desired */
+  text-decoration: underline;
+  color: #000;
 }
