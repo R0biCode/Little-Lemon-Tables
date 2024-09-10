@@ -3,7 +3,7 @@ import CTAButton from "./CTAButton";
 const HomeCard = ({ name, imgSrc, price, content }) => {
     return (
         <div className="CardBody">
-            <img width="100%" alt={name} src={imgSrc} /> {/* Pass the image src directly */}
+            <img width="100%" alt={name} src={imgSrc} />
             <div className="CardContent">
                 <div className="CardNamePrice">
                     <h3>{name}</h3>

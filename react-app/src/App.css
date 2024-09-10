@@ -39,16 +39,16 @@ html, body {
 
 .CardBody{
   background-color: #EDEFEE;
-  width: 40%;
   padding-bottom: 20px;
-  border-radius: 20px;;
+  border-radius: 20px;
+  width: 330px;
 }
 
 .SecondWrapper{
   display: flex;
   gap:2%;
-  padding-left: 2%;
-  padding-right: 2%;
+  justify-content: center;
+  padding-bottom: 4%;
 }
 
 .CardBody img {
@@ -64,6 +64,17 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: #495E57;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 5%;
+  padding: 3rem;
+}
+
+.AboutWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
   width: 100%;
   box-sizing: border-box;
   gap: 5%;
@@ -101,6 +112,12 @@ html, body {
   width: 300px;
 }
 
+.AboutImage{
+  border-radius: 12px;
+  box-shadow: -2px 4px 6.6px 0px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+  width: 600px;
+}
 .Header {
   display: flex;
   justify-content: space-between;
@@ -151,6 +168,36 @@ html, body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.TestimonialW{
+  background-color: #F4CE14;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  align-items: center;
+  justify-content: center;
+  Gap: 1%;
+  display: flex;
+}
+.TCardWrapper{
+  background-color: #fff;
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.TH3{
+  color:#F4CE14;
+}
+.TWrapper{
+  display:flex;
+  gap: 15px;
+}
+
+.TCardWrapper p {
+  color: black;
 }
 
 @media (max-width: 1400px){
@@ -212,6 +259,15 @@ h1 {
   color: #F4CE14;
 }
 
+.PrimaryAboutHeader{
+  color: #F4CE14;
+}
+.AboutWrapper h2{
+  color:black;
+}
+.AboutWrapper p{
+  color:black;
+}
 /* h2 - Subtitle - Regular 40pt */
 h2 {
   font-size: 40px;
