@@ -14,7 +14,7 @@ const Chicago = () =>{
                     <p>
                     We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
                     </p>
-                    <CTAButton className="ChicagoButton" text="Reserve a Table!" />
+                    <CTAButton className="ChicagoButton" text="Reserve a Table!" to="/booking" />
                 </div>
                 <div>
                     <img className='ChicagoImage' alt="Waiter showing off Little Lemon dishes" height='400px' src={require('../../Images/restauranfood.jpg')} />

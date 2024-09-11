@@ -5,6 +5,7 @@ import AboutUs from './Components/About';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Nav from './Components/Nav';
+import BookingPage from './Components/BookingPage';
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       <Routes>
           <Route index element={ <HomePage /> } /> {/* Index is used for root elements. (/) */}
           <Route path="about" element={ <AboutUs /> } />
+          <Route path="booking" element ={ <BookingPage /> } />
       </Routes>
       <div className="FooterBG">
           <Footer />
