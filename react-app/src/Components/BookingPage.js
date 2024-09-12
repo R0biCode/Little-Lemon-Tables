@@ -1,12 +1,14 @@
 import { useReducer } from 'react';
 import ReservationForm from './NestedComponents/ReservationComponent';
+import { fetchAPI} from './NestedComponents/API/api.js';
 const initializeTimes = () => {
-    return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00"];
+  const today = new Date();
+  return fetchAPI(today);
   };
   const updateTimes = (state, action) => {
     switch (action.type) {
       case "UPDATE_TIMES":
-        return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00"];
+        return fetchAPI(new Date(action.date));
       default:
         return state;
     }
