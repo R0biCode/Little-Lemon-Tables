@@ -69,6 +69,24 @@ html, body {
   align-content: center;
 }
 
+.ConfirmationWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  /* Add this to center items horizontally */
+  gap: 20px;
+  height: 100vh; /* Make sure the container fills the entire viewport height */
+  text-align: center; /* Center text inside each element */
+}
+
+.ConfirmationWrapper h1{
+  color:#495E57;
+}
+
+.ConfirmationWrapper h2{
+  color:#495E57;
+}
+
 .FormCustomization{
   font-size: 1rem;
   display: flex;
@@ -172,7 +190,6 @@ html, body {
   bottom: 0;
   left: 0;
 }
-
 
 .FooterLogo, .FooterSection {
   display: inline-block;
