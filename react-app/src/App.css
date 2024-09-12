@@ -93,8 +93,40 @@ html, body {
   flex-direction: column;
   justify-content: center;
   width: 40%;
+  font-family: 'Karla', sans-serif;
+  color: #495E57;
+  font-weight: 600;
+}
+.FormWrapper label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333; /* Darker color for labels */
 }
 
+.FormWrapper input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #495E57; /* Your theme color */
+  color: #fff; /* Darker text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.FormWrapper input,
+.FormWrapper select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: #fff;
+}
 .ChicagoWrapper {
   display: flex;
   justify-content: center;
